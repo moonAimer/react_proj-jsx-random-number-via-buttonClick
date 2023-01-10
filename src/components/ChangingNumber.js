@@ -1,10 +1,7 @@
 import { useState } from "react";
+import generateRandomNumber from "../utils/generateRandomNumber";
 
 function ChangingNumber() {
-  function generateRandomNumber() {
-    return Math.floor(Math.random() * 100);
-  }
-
   const [initialNumber, setInitialNumber] = useState(generateRandomNumber());
 
   const myFna = () => {
