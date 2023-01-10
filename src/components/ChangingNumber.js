@@ -1,10 +1,12 @@
 import { useState } from "react";
 
 function ChangingNumber() {
-  const [initialNumber, setInitialNumber] = useState(500);
+  const abc = Math.floor(Math.random() * 100);
+  const [initialNumber, setInitialNumber] = useState(abc);
 
   const myFna = () => {
-    setInitialNumber(Math.random());
+    const abcForChanging = Math.floor(Math.random() * 100);
+    setInitialNumber(abcForChanging);
   };
 
   return (
