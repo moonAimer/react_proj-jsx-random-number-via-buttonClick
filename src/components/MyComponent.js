@@ -1,14 +1,17 @@
 import { useState } from "react";
 
-function MyComponent({ initialChangeN }) {
-  const [ChangeNumber, setInitialNumber] = useState(initialChangeN);
+function MyComponent() {
+  const [ChangeNumber, setInitialNumber] = useState(100);
   console.log(ChangeNumber);
 
-  const changeN = () => {};
+  const changeN = () => {
+    setInitialNumber(Math.random());
+  };
+
   return (
     <div>
-      <h1>100</h1>
-      <button>Button for generate</button>
+      <h1>{ChangeNumber}</h1>
+      <button onClick={changeN}>Button for generate</button>
     </div>
   );
 }
