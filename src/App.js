@@ -1,10 +1,10 @@
 import "./App.css";
-import MyComponent from "./components/MyComponent";
+import ChangingNumber from "./components/ChangingNumber";
 
 function App() {
   return (
     <div className="App">
-      <MyComponent />
+      <ChangingNumber />
     </div>
   );
 }
